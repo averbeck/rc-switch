@@ -58,6 +58,7 @@
 
 // Number of maximum high/Low changes per packet.
 // We can handle up to (unsigned long) => 32 bit * 2 H/L changes per bit + 2 for sync
+// 32Bit --> 67
 #define RCSWITCH_MAX_CHANGES 67
 
 class RCSwitch {
@@ -177,8 +178,6 @@ class RCSwitch {
      */
     static unsigned int timings[RCSWITCH_MAX_CHANGES];
     #endif
-
-    
 };
 
 #endif
